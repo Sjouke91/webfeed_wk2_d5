@@ -1,0 +1,15 @@
+.newsArticle {
+  background-color: rgb(228, 228, 228);
+  border: 1px solid black;
+  margin: 10px auto;
+  max-width: 800px;
+
+  h3 {
+    border-bottom: 1px solid black;
+  }
+
+  p {
+    text-align: left;
+    padding-left: 10px;
+  }
+}

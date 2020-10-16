@@ -1,0 +1,15 @@
+#articlePage {
+  display: flex;
+
+  #article {
+    width: 75vw;
+    background-color: #282c34;
+    color: white;
+  }
+
+  #comment {
+    width: 25vw;
+    background-color: #282c34;
+    color: white;
+  }
+}
