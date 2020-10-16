@@ -8,7 +8,6 @@ function compareLikes(a, b) {
 }
 
 export default function CommentFeed() {
-  const [didLike, setDidlike] = useState("false");
   const [AllComments, setAllComments] = useState([
     {
       id: 1,
@@ -59,18 +58,13 @@ export default function CommentFeed() {
   }
 
   function commentLiker(id) {
-    if (didLike === "false") {
-      const likeArray = AllComments.map((comment) => {
-        return comment.id === id
-          ? { ...comment, score: comment.score + 1 }
-          : comment;
-      });
-      console.log(likeArray);
-      setAllComments(likeArray);
-      setDidlike("true");
-    } else {
-      return;
-    }
+    const likeArray = AllComments.map((comment) => {
+      return comment.id === id
+        ? { ...comment, score: comment.score + 1 }
+        : comment;
+    });
+    console.log(likeArray);
+    setAllComments(likeArray);
   }
 
   return (
