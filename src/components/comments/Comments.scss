@@ -1,11 +1,11 @@
 .UserName {
-  background-color: #282c34;
+  background-color: #616877;
 
   color: white;
 }
 
 .UserComment {
-  color: white;
+  color: #4a505c;
   font-size: 14px;
 }
 
@@ -14,5 +14,9 @@
 }
 
 .CommentFeed {
-  width: 50vw;
+  width: 35vw;
+  border: 3px solid #282c34;
 }
+
+// background-color: #282c34;
+// color: white;
