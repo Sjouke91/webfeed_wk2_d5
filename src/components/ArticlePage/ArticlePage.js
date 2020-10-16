@@ -46,20 +46,23 @@ export default function ArticlePage() {
         ) : typeof article === "string" ? (
           article
         ) : (
-          <div>
-            <h1>{article.title}</h1>
-            <div className="highlight">
-              <strong>Author:</strong> {article.author}
+          <div id="articleContainer">
+            <div id="articleContent">
+              <h1>{article.title}</h1>
+              <div className="highlight">
+                <strong>Author:</strong> {article.author}
+              </div>
+              <div className="highlight">
+                <strong>Date:</strong> {article.publishedAt}
+              </div>
+              <p>{article.description}</p>
+              <p>{article.content}</p>
+              <img src={article.urlToImage} />
+              <a href={article.url} target="_blank">
+                <p>Read the full article</p>
+              </a>
+              <p>And discuss it here...</p>
             </div>
-            <div className="highlight">
-              <strong>Date:</strong> {article.publishedAt}
-            </div>
-            <p>{article.description}</p>
-            <p>{article.content}</p>
-            <a href={article.url} target="_blank">
-              <p>Read the full article</p>
-            </a>
-            <p>And discuss it here...</p>
           </div>
         )}
       </div>
