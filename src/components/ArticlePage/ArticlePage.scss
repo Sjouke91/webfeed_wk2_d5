@@ -1,15 +1,34 @@
 #articlePage {
+  position: fixed;
   display: flex;
+  height: 95vh;
 
   #article {
-    width: 75vw;
     background-color: #282c34;
     color: white;
+    width: 75vw;
   }
 
   #comment {
-    width: 25vw;
     background-color: #282c34;
     color: white;
+    width: 10vw;
+  }
+
+  img {
+    width: 55vw;
+  }
+
+  #articleContainer {
+    background-color: rgb(228, 228, 228);
+    color: #282c34;
+    margin: auto 50px;
+    padding: 50px;
+
+    h1,
+    p {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
   }
 }
